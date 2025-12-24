@@ -1,0 +1,21 @@
+.welcome-mssg {
+	font-weight: bold;
+	color: green;
+}
+
+button {
+	border: none;
+	border-radius: 5px;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.scream {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+	font-family: Arial;
+}
+
+p {
+	font-family: arial;
+}
