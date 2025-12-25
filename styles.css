@@ -10,8 +10,16 @@ button {
 	font-weight: bold;
 }
 
+.left-btn {
+	background-color: #ff0000;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
 .scream {
-	color: rgb(255, 0, 0);
+	color: #ff0000;
 	font-weight: bold;
 	font-family: Arial;
 }
