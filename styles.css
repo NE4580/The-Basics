@@ -18,6 +18,22 @@ button {
 	padding-right: 8px;
 }
 
+.rght-btn {
+	background-color: #00ff00;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+	transition: color 0.5s,padding-left 0.1s,padding-right 0.1s;
+}
+.rght-btn:hover {
+	cursor: pointer;
+	color: #f0ff0a;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
 .scream {
 	color: #ff0000;
 	font-weight: bold;
