@@ -1,0 +1,79 @@
+1. configuration
+--these details will appear in your commits
+	
+	$ git config --global user.name "NAME"
+	$ git config --global user.email "EMAIL"
+
+	$ git config --global --list #verify config
+	
+	$ git config --global core.editor <editor> #to set editor, this is optional
+	$ git config --global color.ui auto #also optional to set colored output
+
+
+2. Initialization
+	$ git init
+	
+	2.misc
+		$ git status #check the status of the repo
+		$ git add <fileName> #add fileName to stage; use '.' on fileName to add everything in dir
+
+		--Commiting
+		$ git commit -m "message about commit"
+
+		--commit checkup
+		$ git log #shows commit+mssg, author, date and commit hash
+		$ git log --oneline #compressed output
+
+		$ git diff #see what changed
+		
+		***********
+		after a change, add modified files to stage again, then commit
+		***********
+
+3. Branching (* shows what branch is active)
+	$ git branch #check your current branch
+	3. misc
+		
+		*** create branch ***
+			$ git branch <branchName> #creates a branch, but does not switch
+			$ git switch -c <branchName> #create and switch
+		
+		*** switching ***
+			$ git switch <branchName>
+
+		*** merging branches ***
+		siwtch to root braanch of maerg, then
+			$ git merge <branchName> 
+
+		*** deleting a branch ***
+			$ git braanch -d <branchName> 
+
+4. Uploading to Account
+	***create a repo on the account, do not initialize with README, .gitignore, or license
+	 
+	 $ git remote add origin https://github.com/ACCOUNT_NAME/REPO_NAME.git
+
+	 $ git push -u origin <mainBranchNameOfRepo>
+
+	 $ git pull origin <branchName> #to download updates
+
+----------------------------------------------------------------------------------
+											MASTER CLASS: commit management
+----------------------------------------------------------------------------------
+ $ git log #basic list (newes first)
+
+ $ git log --oneline #1 line per commit
+
+ $ git log --oneline --graph --all #graph visualization
+
+ $ git log -p #see commit changes
+
+ $ git log -3 #last N commits
+
+ $	git commit --amend -m "New message" # Amend last commit (change message/files)
+
+ $	git reset --soft HEAD~1 # Undo last commit BUT keep changes staged
+
+ $	git reset HEAD~1 # Undo last commit AND unstage changes
+
+ $	git reset --hard HEAD~1 # Undo last commit AND discard changes (CAREFUL!)
